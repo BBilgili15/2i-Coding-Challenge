@@ -16,25 +16,25 @@ let list3 = [1, 1, 10, 32, 41]
 
 // Declare Function
 function findPairsWithTotalOf(array, target) {
-  let left = 0;
-  let right = array.length - 1;
-  let count = 0;
+  let left = 0
+  let right = array.length - 1
+  let count = 0
 
   while (left < right) {
-    const total = array[left] + array[right];
+    const total = array[left] + array[right]
 
     if (total === target) {
-      count += 1;
-      left += 1;
-      right -= 1;
+      count += 1
+      left += 1
+      right -= 1
     } else if (total < target) {
-      left += 1;
+      left += 1
     } else {
-      right -= 1;
+      right -= 1
     }
   }
 
-  return count;
+  return count
 }
 
 // Test Outcomes
